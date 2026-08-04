@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="tl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PASTOL FILMS — Mga Kwentong Pilipino sa Bawat Frame</title>
+<meta name="description" content="Pastol Films: Pilipinong video production house. Panoorin ang mga proyekto, basahin ang mga anunsyo, at makipag-ugnayan para sa inquiries.">
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="site-header" id="top">
+  <div class="header-inner">
+    <a href="#top" class="brand">
+      <span class="brand-mark" aria-hidden="true">
+        <img id="brandLogo" src="images/favicon.svg" alt="" width="34" height="34">
+      </span>
+      <span class="brand-text" id="brandText">PASTOL <em>FILMS</em></span>
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <a href="#proyekto">Mga Proyekto</a>
+      <a href="#anunsyo">Mga Anunsyo</a>
+      <a href="#tungkol">Tungkol</a>
+      <a href="#ugnayan" class="nav-cta">Mag-inquire</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Buksan ang menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="hero-sky" aria-hidden="true">
+    <div class="stars"></div>
+    <svg class="wave-layer wave-back" viewBox="0 0 1440 300" preserveAspectRatio="none">
+      <path d="M0,120 C 240,60 360,180 600,120 C 840,60 960,180 1200,120 C 1320,90 1380,100 1440,120 L1440,300 L0,300 Z"/>
+    </svg>
+    <svg class="wave-layer wave-mid" viewBox="0 0 1440 300" preserveAspectRatio="none">
+      <path d="M0,160 C 220,100 380,200 620,150 C 860,100 1000,200 1240,150 C 1340,130 1400,140 1440,150 L1440,300 L0,300 Z"/>
+    </svg>
+    <svg class="wave-layer wave-front" viewBox="0 0 1440 300" preserveAspectRatio="none">
+      <path d="M0,200 C 200,150 420,230 660,190 C 900,150 1040,230 1280,190 C 1360,175 1400,180 1440,190 L1440,300 L0,300 Z"/>
+    </svg>
+  </div>
+
+  <div class="hero-content">
+    <p class="eyebrow" id="heroEyebrow">Pilipinong Video Production House</p>
+    <h1 id="heroHeading">Gumagabay sa <em>bawat kwento,</em><br>tulad ng pastol sa kanyang kawan.</h1>
+    <p class="hero-sub" id="heroSubtext">
+      Mula sa maiikling pelikula hanggang dokumentaryo — dinadala namin ang mga
+      kwentong Pilipino sa malawak na karagatan ng screen. Sumama sa paglalayag.
+    </p>
+    <div class="hero-actions">
+      <a href="#proyekto" class="btn btn-primary">Panoorin ang mga Proyekto</a>
+      <a href="#ugnayan" class="btn btn-ghost">Mag-inquire</a>
+    </div>
+  </div>
+
+  <svg class="hero-divider" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0,40 C 240,0 360,80 600,40 C 840,0 960,80 1200,40 C 1320,20 1380,25 1440,40 L1440,90 L0,90 Z"/>
+  </svg>
+</section>
+
+<!-- ============ PROJECTS / VIDEOS ============ -->
+<section class="section" id="proyekto">
+  <div class="section-head">
+    <p class="section-eyebrow">Silid-Aklatan ng mga Gawa</p>
+    <h2>Mga Proyekto</h2>
+    <p class="section-lede">Bawat proyekto ay may sariling entry — tulad ng isang batong pahina, pero buhay at gumagalaw. I-click ang "Panoorin" para mapanood.</p>
+  </div>
+
+  <div class="project-filters" id="projectFilters">
+    <button class="filter-chip is-active" data-filter="lahat">Lahat</button>
+  </div>
+
+  <div class="project-grid" id="projectGrid">
+    <!-- Populated by js/script.js from the PROJECTS array -->
+  </div>
+</section>
+
+<!-- ============ ANNOUNCEMENTS ============ -->
+<section class="section section-alt" id="anunsyo">
+  <div class="section-head">
+    <p class="section-eyebrow">Mga Balita mula sa Pastol</p>
+    <h2>Mga Anunsyo</h2>
+    <p class="section-lede">Pinakabagong balita — mula sa bagong proyekto hanggang sa mga casting call at premiere.</p>
+  </div>
+
+  <div class="announce-feed" id="announceFeed">
+    <!-- Populated by js/script.js from the ANNOUNCEMENTS array -->
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section" id="tungkol">
+  <div class="about-grid">
+    <div class="about-copy">
+      <p class="section-eyebrow">Ang Pangalan, Ang Misyon</p>
+      <h2>Bakit "Pastol"?</h2>
+      <p>
+        Ang <strong>pastol</strong> ay hindi nangunguna sa pamamagitan ng puwersa —
+        gumagabay siya, nakikinig, at nananatiling malapit sa kawan sa bawat hakbang
+        ng paglalakbay. Ganito rin namin tinitingnan ang paggawa ng pelikula: hindi
+        kami ang bida ng kwento — kami ang gabay na tumutulong dumating ang bawat
+        kwento sa tamang anyo, sa tamang panahon.
+      </p>
+      <p>
+        Sa bawat alon ng produksiyon — mula sa unang script hanggang sa huling cut —
+        narito ang Pastol Films upang samahan ang mga manunulat, artista, at
+        komunidad na may kwentong sinasabi.
+      </p>
+      <ul class="about-stats">
+        <li><span class="stat-num">20+</span><span class="stat-label">natapos na proyekto</span></li>
+        <li><span class="stat-num">08</span><span class="stat-label">taon sa industriya</span></li>
+        <li><span class="stat-num">100%</span><span class="stat-label">Pilipinong kwento</span></li>
+      </ul>
+    </div>
+    <div class="about-art" aria-hidden="true">
+      <svg viewBox="0 0 400 400" class="wave-emblem">
+        <circle cx="200" cy="140" r="46" class="emblem-moon"/>
+        <path class="emblem-wave e1" d="M0,220 C 60,180 100,260 160,220 C 220,180 260,260 320,220 C 350,205 380,210 400,220 L400,400 L0,400 Z"/>
+        <path class="emblem-wave e2" d="M0,260 C 60,225 110,295 170,260 C 230,225 270,295 330,260 C 355,248 380,252 400,260 L400,400 L0,400 Z"/>
+        <path class="emblem-wave e3" d="M0,300 C 60,270 120,325 180,300 C 240,270 280,325 340,300 C 360,290 380,293 400,300 L400,400 L0,400 Z"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section section-contact" id="ugnayan">
+  <div class="contact-wrap">
+    <div class="contact-info">
+      <p class="section-eyebrow">Makipag-ugnayan</p>
+      <h2>May proyekto ka ba<br>o gustong mag-inquire?</h2>
+      <p class="section-lede">
+        Bukas kami para sa collaborations, sponsorships, festival submissions, at
+        general inquiries. Punan lamang ang form o i-message kami diretso.
+      </p>
+
+      <ul class="contact-list" id="contactList">
+        <li>
+          <span class="contact-label">Email</span>
+          <a id="emailLink" href="mailto:hello@pastolfilms.com">hello@pastolfilms.com</a>
+        </li>
+        <li>
+          <span class="contact-label">Facebook</span>
+          <a id="fbLink" href="https://facebook.com/pastolfilms" target="_blank" rel="noopener">facebook.com/pastolfilms</a>
+        </li>
+        <li>
+          <span class="contact-label">Instagram</span>
+          <a id="igLink" href="https://instagram.com/pastolfilms" target="_blank" rel="noopener">@pastolfilms</a>
+        </li>
+        <li>
+          <span class="contact-label">YouTube</span>
+          <a id="ytLink" href="https://youtube.com/@pastolfilms" target="_blank" rel="noopener">@pastolfilms</a>
+        </li>
+      </ul>
+      <p class="contact-note">* Lahat ng laman sa page na ito ay ina-edit sa <code>/admin</code> — hindi na kailangang galawin ang code.</p>
+    </div>
+
+    <form class="contact-form" id="contactForm">
+      <label>
+        Pangalan
+        <input type="text" name="name" required placeholder="Juan Dela Cruz">
+      </label>
+      <label>
+        Email
+        <input type="email" name="email" required placeholder="ikaw@email.com">
+      </label>
+      <label>
+        Uri ng Inquiry
+        <select name="type">
+          <option>Project Collaboration</option>
+          <option>Sponsorship / Partnership</option>
+          <option>Casting</option>
+          <option>Media / Press</option>
+          <option>Iba pa</option>
+        </select>
+      </label>
+      <label>
+        Mensahe
+        <textarea name="message" rows="4" required placeholder="Isulat ang iyong mensahe dito..."></textarea>
+      </label>
+      <button type="submit" class="btn btn-primary btn-full">Ipadala ang Mensahe</button>
+      <p class="form-note" id="formNote"></p>
+    </form>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <svg class="footer-wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0,40 C 240,0 360,70 600,35 C 840,0 960,70 1200,35 C 1320,15 1380,20 1440,35 L1440,0 L0,0 Z"/>
+  </svg>
+  <div class="footer-inner">
+    <div class="footer-brand" id="footerBrand">PASTOL <em>FILMS</em></div>
+    <p>&copy; <span id="year"></span> <span id="footerName">Pastol Films</span>. Lahat ng karapatan ay nakalaan.</p>
+    <a href="#top" class="back-top">Pabalik sa Itaas ↑</a>
+  </div>
+</footer>
+
+<!-- Kailangan para gumana ang mga login link mula sa email invite (/admin) -->
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("login", () => { document.location.href = "/admin/"; });
+  }
+</script>
+
+<script src="js/script.js"></script>
+</body>
+</html>
